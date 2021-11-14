@@ -5,7 +5,7 @@ body {
     position: relative;
     height: auto;
     width: auto;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -30,6 +30,8 @@ body {
 
 .header-center {
     float: none;
+    position: -webkit-sticky;
+    position: sticky;
     position: absolute;
     top: 50%;
     left: 40%;
@@ -55,6 +57,7 @@ a {
 
 a:hover {
     color: white;
+    cursor: pointer;
 }
 
 a::before {
@@ -79,46 +82,75 @@ a:hover::before {
 }
 
 .quicklinks {
+    overflow: hidden;
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin-left: -0.5em;
+    margin-bottom: -0.5em;
 }
 
-.column1 {
-    float: left;
-    width: 50%;
-}
-
-.column2 {
-    float: left;
-    width: 50%;
-}
-
-.button {
+.button1 {
+    display: inline-block;
     background-color: inherit;
-    border: 1px solid #74c0ff;
+    padding: 0.1em 1em;
+    box-sizing: border-box;
+    border: 0.05em solid #74c0ff;
     color: #74c0ff;
-    padding: 15px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-weight: bold;
+    font-size: 1.2em;
     cursor: pointer;
-    border-radius: 14px;
+    border-radius: 2em;
+    transition: all 0.15s;
+}
+
+.button2 {
+    display: inline-block;
+    background-color: inherit;
+    padding: 0.1em 2.2em;
+    box-sizing: border-box;
+    border: 0.05em solid #74c0ff;
+    color: #74c0ff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 2em;
+    transition: all 0.15s;
+}
+
+.button1:hover {
+    color: white;
+    background-color: #74c0ff;
+}
+
+.button2:hover {
+    color: white;
+    background-color: #74c0ff;
+}
+
+@media screen and (max-width: 500px){
+    .button1{
+        float: none;
+        display: block;
+    }
+    .button2{
+        float: none;
+    }
 }
 
 .discordbutton {
-    margin: 0;
+    float: none;
+    top: 635px;
+    left: 720px;
     position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .vipbutton {
-    margin: 0;
+    float: none;
+    top: 635px;
+    left: 880px;
     position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
