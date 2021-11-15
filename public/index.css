@@ -241,7 +241,7 @@ a:hover::before {
 .server1-ip {
     position: absolute;
     color: white;
-    left: 60px;
+    left: 40px;
     top: 95px;
     font-size: 1em;
 }
@@ -257,7 +257,7 @@ a:hover::before {
 .server1-wp {
     position: absolute;
     color: white;
-    left: 20px;
+    left: 12px;
     top: 145px;
     font-size: 1em;
 }
