@@ -190,15 +190,87 @@ a:hover::before {
 
 .servers {
     background-color: inherit;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    left: 800px;
-    top: 100px;
+    display: block;
+    text-align: center;
     color: white;
-    font-size: 3em;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.server1 {
+    position: absolute;
+    border: 1px solid;
+    border-color: #74c0ff;
+    border-radius: 25px;
+    color: white;
+    top: 100px;
+    left: 700px;
+    height: 300px;
+    width: 300px;
+    font-size: 1em;
+}
+
+.server1 {
+    color:#74c0ff;
+}
+
+.server1-status {
+    position: absolute;
+    color: green;
+    left: 70px;
+    top: 70px;
+    font-size: 1em;
+}
+
+.server1-ip {
+    position: absolute;
+    color: white;
+    left: 60px;
+    top: 95px;
+    font-size: 1em;
+}
+
+.server1-ms {
+    position: absolute;
+    color: white;
+    left: 100px;
+    top: 120px;
+    font-size: 1em;
+}
+
+.server1-wp {
+    position: absolute;
+    color: white;
+    left: 20px;
+    top: 145px;
+    font-size: 1em;
+}
+
+.s1-btn{
+    display: inline-block;
+    background-color: inherit;
+    padding: 0.1em 1em;
+    box-sizing: border-box;
+    border: 0.05em solid #74c0ff;
+    color: #74c0ff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 2em;
+    transition: all 0.15s;
+}
+
+.server1-btn {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.s1-btn:hover {
+    color: white;
+    background-color: #74c0ff;
 }
 
 @media (max-width: 800px) {
