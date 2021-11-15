@@ -197,13 +197,29 @@ a:hover::before {
     padding: 10px;
 }
 
+.servers-title {
+    position: absolute;
+    left: 770px;
+    top: 0px;
+    color:#74c0ff;
+    font-size: 1.2em;
+}
+
+.servers-ls {
+    position: absolute;
+    left: 815px;
+    top: 55px;
+    color: white;
+    font-size: 1.20em;
+}
+
 .server1 {
     position: absolute;
     border: 1px solid;
     border-color: #74c0ff;
     border-radius: 25px;
     color: white;
-    top: 100px;
+    top: 170px;
     left: 700px;
     height: 300px;
     width: 300px;
