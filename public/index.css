@@ -37,18 +37,6 @@ body {
     position: absolute;
     top: 50%;
     left: 40%;
-    transform: translateY(-50%, -50%);
-}
-
-@media screen and (max-width: 500px) {
-    .header a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .header-center {
-        float: none;
-    }
 }
 
 a {
@@ -83,9 +71,10 @@ a:hover::before {
     float: none;
     position: absolute;
     display: block;
-    left: 708px;
-    top: 270px;
+    left: 360px;
+    top: 130px;
     height: auto;
+    width: 300px;
 }
 
 .arctic-h1 {
@@ -289,8 +278,200 @@ a:hover::before {
     background-color: #74c0ff;
 }
 
-@media (max-width: 800px) {
+/* Tablets and under */
+@media (max-width: 768px) {
+    .header a {
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+    }
+    .header-center {
+        top: 0px;
+        left: 37%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    a::before {
+        position: absolute;
+        top: 40px;
+    }
+
+    .logo {
+        float: left;
+        position: relative;
+        display: block;
+        left: 104px;
+        top: 25px;
+        width: 80px;
+        height: auto;
+    }
+
+    .arctic-h1 {
+        float:left;
+        position: relative;
+        display: block;
+        left: 120px;
+        top: 110px;
+        color: white;
+        font-size: 0.5em;
+    }
+    
+    .rust-h1 {
+        float:left;
+        position: relative;
+        display: block;
+        left: 122px;
+        top: 110px;
+        color: #74c0ff;
+        font-size: 0.5em;
+    }
+
+    .button1 {
+        display: inline-block;
+        background-color: inherit;
+        padding: 0.1em 1em;
+        box-sizing: border-box;
+        border: 0.05em solid #74c0ff;
+        color: #74c0ff;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.2em;
+        cursor: pointer;
+        border-radius: 2em;
+        transition: all 0.15s;
+    }
+
+    .button2 {
+        display: inline-block;
+        background-color: inherit;
+        padding: 0.1em 2.2em;
+        box-sizing: border-box;
+        border: 0.05em solid #74c0ff;
+        color: #74c0ff;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.2em;
+        cursor: pointer;
+        border-radius: 2em;
+        transition: all 0.15s;
+    }
+
+    .discordbutton {
+        float: left;
+        top: 155px;
+        left: 207px;
+        position: absolute;
+    }
+    
+    .steambutton {
+        float: left;
+        top: 155px;
+        left: 255px;
+        position: absolute;
+    }
+
+    .server-container {
+        display: block;
+        position: absolute;
+        background: #0b1a23;
+        top: 280px;
+        height: 20vh;
+        width: 100%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
     .servers {
         flex-direction: column;
+    }
+
+    .servers-title {
+        position: absolute;
+        left: 225px;
+        top: 0px;
+        color:#74c0ff;
+        font-size: 0.35em;
+    }
+
+    .servers-ls {
+        position: absolute;
+        left: 237px;
+        top: 20px;
+        color: white;
+        font-size: 0.2em;
+    }
+
+    .server1 {
+        position: absolute;
+        border: 1px solid;
+        border-color: #74c0ff;
+        border-radius: 25px;
+        color: #74c0ff;
+        top: 50px;
+        left: 200px;
+        height: 100px;
+        width: 100px;
+        font-size: 0.2em;
+    }
+
+    .server1-status {
+        position: absolute;
+        color: green;
+        left: 25px;
+        top: 25px;
+        font-size: 0.2em;
+    }
+
+    .server1-ip {
+        position: absolute;
+        color: white;
+        left: 7px;
+        top: 35px;
+        font-size: 0.1em;
+    }
+
+    .server1-ms {
+        position: absolute;
+        color: white;
+        left: 30px;
+        top: 45px;
+        font-size: 0.2em;
+    }
+
+    .server1-wp {
+        position: absolute;
+        color: white;
+        left: 2px;
+        top: 55px;
+        font-size: 0.2em;
+    }
+
+    .server1-btn {
+        position: absolute;
+        top: 80px;
+        left: 35px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .header-center {
+        top: 0px;
+        left: 160px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header a {
+        font-size: 10px;
+    }
+
+    a::before {
+        position: absolute;
+        top: 35px;
     }
 }
