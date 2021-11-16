@@ -284,15 +284,15 @@ a:hover::before {
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .header a {
         display: flex;
         flex-direction: row;
-        font-size: 14px;
+        font-size: 10px;
     }
     .header-center {
         top: 0px;
-        left: 37%;
+        left: 32%;
         display: flex;
         flex-direction: row;
     }
