@@ -71,7 +71,7 @@ a:hover::before {
     float: none;
     position: absolute;
     display: block;
-    left: 360px;
+    left: 33.2%;
     top: 130px;
     height: auto;
     width: 300px;
@@ -278,21 +278,26 @@ a:hover::before {
     background-color: #74c0ff;
 }
 
-/* Tablets and under */
-@media (max-width: 768px) {
-    
-}
+/* Responsive */
+@media only screen and (max-width: 576px) {
+    body {
+        background-image: url('img/rust-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 100vh;
+        width: 1vw;
+    }
 
-/* Mobile */
-@media (max-width: 500px) {
     .header a {
         display: flex;
         flex-direction: row;
-        font-size: 10px;
+        font-size: 16px;
     }
     .header-center {
         top: 0px;
-        left: 32%;
+        left: 2700%;
         display: flex;
         flex-direction: row;
     }
@@ -303,33 +308,32 @@ a:hover::before {
     }
 
     .logo {
-        float: left;
         position: relative;
-        display: block;
-        left: 104px;
-        top: 25px;
-        width: 80px;
+        display: flex;
+        left: 40%;
+        top: 115px;
+        width: 50vw;
         height: auto;
     }
 
     .arctic-h1 {
-        float:left;
+        float: left;
         position: relative;
-        display: block;
-        left: 120px;
-        top: 110px;
+        display: flex;
+        left: 2300%;
+        top: 100%;
         color: white;
-        font-size: 0.5em;
+        font-size: 3.6vw;
     }
     
     .rust-h1 {
-        float:left;
+        float: left;
         position: relative;
         display: block;
-        left: 122px;
-        top: 110px;
+        left: 5000%;
+        top: 74px;
         color: #74c0ff;
-        font-size: 0.5em;
+        font-size: 3.6vw;
     }
 
     .button1 {
@@ -342,7 +346,7 @@ a:hover::before {
         text-align: center;
         text-decoration: none;
         font-weight: bold;
-        font-size: 0.2em;
+        font-size: 0.5em;
         cursor: pointer;
         border-radius: 2em;
         transition: all 0.15s;
@@ -358,7 +362,7 @@ a:hover::before {
         text-align: center;
         text-decoration: none;
         font-weight: bold;
-        font-size: 0.2em;
+        font-size: 0.5em;
         cursor: pointer;
         border-radius: 2em;
         transition: all 0.15s;
@@ -366,15 +370,15 @@ a:hover::before {
 
     .discordbutton {
         float: left;
-        top: 155px;
-        left: 207px;
+        top: 220px;
+        left: 195px;
         position: absolute;
     }
     
     .steambutton {
         float: left;
-        top: 155px;
-        left: 255px;
+        top: 220px;
+        left: 265px;
         position: absolute;
     }
 
@@ -382,9 +386,9 @@ a:hover::before {
         display: block;
         position: absolute;
         background: #0b1a23;
-        top: 280px;
-        height: 20vh;
-        width: 100%;
+        top: 100%;
+        height: 70vh;
+        width: 97.1vw;
         right: 0;
         left: 0;
         bottom: 0;
@@ -396,18 +400,18 @@ a:hover::before {
 
     .servers-title {
         position: absolute;
-        left: 225px;
+        left: 35%;
         top: 0px;
         color:#74c0ff;
-        font-size: 0.35em;
+        font-size: 1em;
     }
 
     .servers-ls {
         position: absolute;
-        left: 237px;
-        top: 20px;
+        left: 215px;
+        top: 50px;
         color: white;
-        font-size: 0.2em;
+        font-size: 1em;
     }
 
     .server1 {
@@ -416,48 +420,48 @@ a:hover::before {
         border-color: #74c0ff;
         border-radius: 25px;
         color: #74c0ff;
-        top: 50px;
-        left: 200px;
-        height: 100px;
-        width: 100px;
-        font-size: 0.2em;
+        top: 120px;
+        left: 100px;
+        height: 400px;
+        width: 300px;
+        font-size: 1em;
     }
 
     .server1-status {
         position: absolute;
         color: green;
-        left: 25px;
-        top: 25px;
-        font-size: 0.2em;
+        left: 60px;
+        top: 85px;
+        font-size: 1em;
     }
 
     .server1-ip {
         position: absolute;
         color: white;
-        left: 7px;
-        top: 35px;
-        font-size: 0.1em;
+        left: 40px;
+        top: 120px;
+        font-size: 1em;
     }
 
     .server1-ms {
         position: absolute;
         color: white;
-        left: 30px;
-        top: 45px;
-        font-size: 0.2em;
+        left: 100px;
+        top: 145px;
+        font-size: 1em;
     }
 
     .server1-wp {
         position: absolute;
         color: white;
-        left: 2px;
-        top: 55px;
-        font-size: 0.2em;
+        left: 12px;
+        top: 170px;
+        font-size: 1em;
     }
 
     .server1-btn {
         position: absolute;
-        top: 80px;
-        left: 35px;
+        top: 340px;
+        left: 100px;
     }
 }
