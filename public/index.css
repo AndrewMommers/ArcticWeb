@@ -280,6 +280,11 @@ a:hover::before {
 
 /* Tablets and under */
 @media (max-width: 768px) {
+    
+}
+
+/* Mobile */
+@media (max-width: 500px) {
     .header a {
         display: flex;
         flex-direction: row;
@@ -454,24 +459,5 @@ a:hover::before {
         position: absolute;
         top: 80px;
         left: 35px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 500px) {
-    .header-center {
-        top: 0px;
-        left: 160px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .header a {
-        font-size: 10px;
-    }
-
-    a::before {
-        position: absolute;
-        top: 35px;
     }
 }
