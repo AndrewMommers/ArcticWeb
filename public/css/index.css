@@ -80,7 +80,7 @@ a:hover::before {
     float:none;
     position: absolute;
     display: block;
-    left: 660px;
+    left: 36%;
     top: 500px;
     color: white;
     font-size: 2em;
@@ -90,7 +90,7 @@ a:hover::before {
     float:none;
     position: absolute;
     display: block;
-    left: 900px;
+    left: 49%;
     top: 500px;
     color: #74c0ff;
     font-size: 2em;
