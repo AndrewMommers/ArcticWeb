@@ -278,6 +278,36 @@ a:hover::before {
     background-color: #74c0ff;
 }
 
+.footer {
+    display: flex;
+    position: relative;
+    color: #ddd;
+    top: 1547px;
+}
+
+.copyright {
+    position: relative;
+    left: 1%;
+    font-size: 0.8em;
+}
+
+.policy-btn {
+    position: relative;
+    padding-top: 10px;
+    left: 84%;
+    color: #ddd;
+}
+
+.button3 {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ddd;
+}
+
 /* Responsive */
 @media only screen and (max-width: 576px) {
     body {
