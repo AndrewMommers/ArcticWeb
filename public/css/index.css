@@ -1,5 +1,5 @@
 body {
-    background-image: url('img/rust-background.png');
+    background-image: url('/img/rust-background.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -70,8 +70,7 @@ a:hover::before {
 .logo {
     float: none;
     position: absolute;
-    display: block;
-    left: 33.2%;
+    left: 33.25%;
     top: 130px;
     height: auto;
     width: 300px;
@@ -154,14 +153,14 @@ a:hover::before {
 .discordbutton {
     float: none;
     top: 635px;
-    left: 730px;
+    left: 40%;
     position: absolute;
 }
 
 .steambutton {
     float: none;
     top: 635px;
-    left: 880px;
+    left: 48%;
     position: absolute;
 }
 
@@ -209,7 +208,7 @@ a:hover::before {
     border-radius: 25px;
     color: white;
     top: 170px;
-    left: 700px;
+    left: 38.5%;
     height: 300px;
     width: 300px;
     font-size: 1em;
@@ -219,10 +218,22 @@ a:hover::before {
     color:#74c0ff;
 }
 
+.server1-h1 {
+    font-size: 1em;
+}
+
 .server1-status {
     position: absolute;
     color: green;
-    left: 70px;
+    left: 20%;
+    top: 70px;
+    font-size: 1em;
+}
+
+.server1-players {
+    position: absolute;
+    color: white;
+    left: 43%;
     top: 70px;
     font-size: 1em;
 }
@@ -230,24 +241,40 @@ a:hover::before {
 .server1-ip {
     position: absolute;
     color: white;
-    left: 40px;
+    left: 15%;
     top: 95px;
+    font-size: 1em;
+}
+
+.server1-map {
+    position: absolute;
+    color: white;
+    left: 33%;
+    top: 120px;
     font-size: 1em;
 }
 
 .server1-ms {
     position: absolute;
     color: white;
-    left: 100px;
-    top: 120px;
+    left: 33%;
+    top: 145px;
     font-size: 1em;
 }
 
 .server1-wp {
     position: absolute;
     color: white;
-    left: 12px;
-    top: 145px;
+    left: 4%;
+    top: 167px;
+    font-size: 1em;
+}
+
+.server1-rating {
+    position: absolute;
+    color: white;
+    left: 40%;
+    top: 190px;
     font-size: 1em;
 }
 
@@ -311,7 +338,7 @@ a:hover::before {
 /* Responsive */
 @media only screen and (max-width: 576px) {
     body {
-        background-image: url('img/rust-background.png');
+        background-image: url('/img/rust-background.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

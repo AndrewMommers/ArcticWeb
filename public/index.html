@@ -7,8 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="img/favicon.png" rel="icon">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/index.css">
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <script src="https://api.rust-servers.info/embed.js?id=6121"></script>
     </head>
     <body>
         <div class="header">
@@ -55,19 +56,28 @@
                 </div>
                 <div class="server1 servers">
                     <div class="server1-h1">
-                        <h2>[AU] Rust Server 1</h2>
+                        <h2>[AU/NZ] Arctic Main</h2>
                     </div>
                     <div class="server1-status">
-                        <p>Online</p>
+                        <p><script>document.write(is_online);</script> - 1/0</p>
+                    </div>
+                    <div class="server1-players">
+                        <p>| <script>document.write(players_cur);</script> / <script>document.write(players_max);</script> Players</p>
                     </div>
                     <div class="server1-ip">
-                        <p>Server IP: 103.193.80.81:28025</p>
+                        <p>Server IP: <script>document.write(server_ip);</script><script>document.write(server_port);</script></p>
+                    </div>
+                    <div class="server1-map">
+                        <p>Map: <script>document.write(map);</script>
                     </div>
                     <div class="server1-ms">
-                        <p>Map Size: 3500</p>
+                        <p>Map Size: <script>document.write(map_size);</script></p>
                     </div>
                     <div class="server1-wp">
                         <p>Wipe: Thursday & Sunday (12AM AEST)</p>
+                    </div>
+                    <div class="server1-rating">
+                        <p>Rating: <script>document.write(rating);</script></p>
                     </div>
                     <div class="server1-btn">
                         <form action="steam://connect/103.193.80.81:28025" target="_blank">
