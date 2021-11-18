@@ -225,7 +225,7 @@ a:hover::before {
 .server1-status {
     position: absolute;
     color: green;
-    left: 20%;
+    left: 22%;
     top: 70px;
     font-size: 1em;
 }
