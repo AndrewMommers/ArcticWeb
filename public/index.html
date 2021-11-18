@@ -9,15 +9,15 @@
         <link href="img/icon.png" rel="icon">
         <link rel="stylesheet" href="css/index.css">
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <script src="<%= htmlWebpackPlugin.options.apiUrl %>"></script>
         <script src="https://api.rust-servers.info/embed.js?id=6121"></script>
+        <!--<script src="js/status.js"></script>-->
     </head>
     <body>
         <div class="header">
             <div class="header-center">
                 <a class="active" href="index.html"><strong>HOME</strong></a>
                 <a href="#servers"><strong>SERVERS</strong></a>
-                <a href="shop.com" target="_blank"><strong>SHOP</strong></a>
+                <a href="shop.arcticrust.co" target="_blank"><strong>SHOP</strong></a>
             </div>
         </div>
         <div class="main-section">
@@ -60,13 +60,13 @@
                         <h2>[AU/NZ] Arctic Main</h2>
                     </div>
                     <div class="server1-status">
-                        <p><script>document.write(is_online);</script>Online</p>
+                        <p id="status"></p>
                     </div>
                     <div class="server1-players">
                         <p>| <script>document.write(players_cur);</script> / <script>document.write(players_max);</script> Players</p>
                     </div>
                     <div class="server1-ip">
-                        <p>Server IP: <script>document.write(server_ip);</script><script>document.write(server_port);</script></p>
+                        <p>Server IP: <script>document.write(server_ip);</script>: <script>document.write(server_port);</script></p>
                     </div>
                     <div class="server1-map">
                         <p>Map: <script>document.write(map);</script>
@@ -75,7 +75,7 @@
                         <p>Map Size: <script>document.write(map_size);</script></p>
                     </div>
                     <div class="server1-wp">
-                        <p>Wipe: <script>document.write(wipe_cycle);</script></p>
+                        <p>Wipe: Weekly (Sunday's 12AM AEST)</p>
                     </div>
                     <div class="server1-rating">
                         <p>Rating: <script>document.write(rating);</script></p>
@@ -99,5 +99,27 @@
             </div>
         </div>
         <script src="" async defer></script>
+        <script>
+            const api_s1status_url = 'https://api.rust-servers.info/status/6121'
+            async function getS1Status () {
+                const response = await fetch (api_s1status_url);
+                const data = await response.json();
+                const { status } = data;
+                document.getElementById('status').textContent = status;
+            }
+
+            getS1Status();
+        </script>
+        <script>
+            const api_s1info_url = 'https://api.rust-servers.info/info/6121'
+            async function getS1Wipe () {
+                const response = await fetch (api_s1info_url);
+                const data = await response.json();
+                const { wipe_cycle } = data;
+                document.getElementById('wipe_cycle').textContent = wipe_cycle;
+            }
+
+            getS1Wipe();
+        </script>
     </body>
 </html>

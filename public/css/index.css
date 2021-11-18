@@ -2,8 +2,9 @@ body {
     background-image: url('/img/rust-background.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -35,7 +36,7 @@ body {
     position: -webkit-sticky;
     position: sticky;
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 40%;
 }
 
@@ -67,32 +68,34 @@ a:hover::before {
     transform: scaleX(1);
 }
 
+.main-section {
+    display: flex;
+    position: relative;
+    top: 47%;
+}
+
 .logo {
-    float: none;
-    position: absolute;
-    left: 33.25%;
-    top: 130px;
+    float: left;
+    position: relative;
     height: auto;
     width: 300px;
+    bottom: 75%;
+    left: 33.5%;
 }
 
 .arctic-h1 {
-    float:none;
-    position: absolute;
-    display: block;
-    left: 36%;
-    top: 500px;
+    float: left;
+    position: relative;
     color: white;
+    left: 20%;
     font-size: 2em;
 }
 
 .rust-h1 {
-    float:none;
-    position: absolute;
-    display: block;
-    left: 49%;
-    top: 500px;
+    float: left;
+    position: relative;
     color: #74c0ff;
+    left: 20%;
     font-size: 2em;
 }
 
@@ -151,24 +154,25 @@ a:hover::before {
 }
 
 .discordbutton {
-    float: none;
-    top: 635px;
+    float: left;
+    top: 62%;
     left: 40%;
     position: absolute;
 }
 
 .steambutton {
-    float: none;
-    top: 635px;
+    float: left;
+    top: 62%;
     left: 48%;
     position: absolute;
 }
 
 .server-container {
     display: block;
-    position: absolute;
+    position: relative;
     background: #0b1a23;
-    top: 1015px;
+    background-position: center;
+    top: 70%;
     height: 60vh;
     width: 100%;
     right: 0;
@@ -225,7 +229,7 @@ a:hover::before {
 .server1-status {
     position: absolute;
     color: green;
-    left: 22%;
+    left: 24%;
     top: 70px;
     font-size: 1em;
 }
@@ -249,7 +253,7 @@ a:hover::before {
 .server1-map {
     position: absolute;
     color: white;
-    left: 33%;
+    left: 20%;
     top: 120px;
     font-size: 1em;
 }
@@ -265,7 +269,7 @@ a:hover::before {
 .server1-wp {
     position: absolute;
     color: white;
-    left: 4%;
+    left: 6%;
     top: 167px;
     font-size: 1em;
 }
@@ -309,19 +313,19 @@ a:hover::before {
     display: flex;
     position: relative;
     color: #ddd;
-    top: 1547px;
+    top: 65%;
 }
 
 .copyright {
-    position: relative;
+    position: absolute;
     left: 1%;
     font-size: 0.8em;
 }
 
 .policy-btn {
-    position: relative;
+    position: absolute;
     padding-top: 10px;
-    left: 84%;
+    left: 94%;
     color: #ddd;
 }
 
@@ -336,7 +340,8 @@ a:hover::before {
 }
 
 /* Responsive */
-@media only screen and (max-width: 576px) {
+
+@media only screen and (max-width: 768px) {
     body {
         background-image: url('/img/rust-background.png');
         background-repeat: no-repeat;
@@ -426,21 +431,21 @@ a:hover::before {
     }
 
     .discordbutton {
-        float: left;
-        top: 220px;
-        left: 195px;
+        float: none;
+        top: 65%;
+        left: 80%;
         position: absolute;
     }
     
     .steambutton {
-        float: left;
-        top: 220px;
-        left: 265px;
+        float: none;
+        top: 65%;
+        left: 48%;
         position: absolute;
     }
 
     .server-container {
-        display: block;
+        display: flex;
         position: absolute;
         background: #0b1a23;
         top: 100%;
@@ -465,13 +470,15 @@ a:hover::before {
 
     .servers-ls {
         position: absolute;
-        left: 215px;
-        top: 50px;
+        left: 41%;
+        top: 7%;
         color: white;
         font-size: 1em;
     }
 
     .server1 {
+        display: flex;
+        flex-direction: column;
         position: absolute;
         border: 1px solid;
         border-color: #74c0ff;
@@ -487,16 +494,24 @@ a:hover::before {
     .server1-status {
         position: absolute;
         color: green;
-        left: 60px;
-        top: 85px;
+        left: 25%;
+        top: 18%;
+        font-size: 1em;
+    }
+
+    .server1-players {
+        position: absolute;
+        color: white;
+        left: 43%;
+        top: 18%;
         font-size: 1em;
     }
 
     .server1-ip {
         position: absolute;
         color: white;
-        left: 40px;
-        top: 120px;
+        left: 15%;
+        top: 25%;
         font-size: 1em;
     }
 
@@ -520,5 +535,9 @@ a:hover::before {
         position: absolute;
         top: 340px;
         left: 100px;
+    }
+
+    .footer {
+        size: 0.5em;
     }
 }
