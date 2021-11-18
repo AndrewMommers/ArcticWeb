@@ -11,6 +11,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .header {
     overflow: hidden;
     padding: 10px 10px;
@@ -104,11 +108,14 @@ a:hover::before {
 }
 
 .quicklinks {
+    position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     margin-left: -0.5em;
     margin-bottom: -0.5em;
+    top: 30%;
+    left: 40%;
 }
 
 .button1 {
@@ -154,17 +161,14 @@ a:hover::before {
 }
 
 .discordbutton {
+    position: relative;
     float: left;
-    top: 62%;
-    left: 40%;
-    position: absolute;
 }
 
 .steambutton {
+    position: relative;
     float: left;
-    top: 62%;
-    left: 48%;
-    position: absolute;
+    left: 20%;
 }
 
 .server-container {
