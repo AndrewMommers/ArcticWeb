@@ -15,20 +15,17 @@
         <div class="header">
             <div class="header-center">
                 <a class="active" href="index.html"><strong>HOME</strong></a>
-                <a href="#servers"><strong>SERVERS</strong></a>
+                <a href="#server-section"><strong>SERVERS</strong></a>
                 <a href="https://arcticrust.tebex.io/" target="_blank"><strong>SHOP</strong></a>
             </div>
         </div>
         <div class="main-section">
-            <div class="logo">
-                <img src="img/logo.png" alt="arcticlogo" class="logo">
-            </div>
-            <div class="arctic-h1">
-                <h1>ARCTIC</h1>
-            </div>
-            <div class="rust-h1">
-                <h1>RUST</h1>
-            </div>
+                <div class="logo">
+                    <img src="img/logo.png" alt="arcticlogo" class="logo">
+                </div>
+                <div class="arcticrust">
+                    <span><h1>ARCTIC</h1><h1 style="color:#74c0ff">RUST</h1></span>
+                </div>
         </div>
         <div class="quicklinks">
             <div class="column1">
@@ -46,43 +43,45 @@
                 </div>
             </div>
         </div>
-        <div class="server-container" id="servers">
-            <div class="servers">
-                <div class="servers-title">
-                    <h1>SERVERS</h1>
-                </div>
-                <div class="servers-ls">
-                    <p>Live Stats</p>
-                </div>
-                <div class="server1 servers">
-                    <div class="server1-h1">
-                        <h2>[AU/NZ] Arctic Main</h2>
-                    </div>
-                    <div class="server1-status">
-                        <p id="status"></p>
-                    </div>
-                    <div class="server1-players">
-                        <p>| <script>document.write(players_cur);</script> / <script>document.write(players_max);</script> Players</p>
-                    </div>
-                    <div class="server1-ip">
-                        <p>Server IP: <script>document.write(server_ip);</script>: <script>document.write(server_port);</script></p>
-                    </div>
-                    <div class="server1-map">
-                        <p>Map: <script>document.write(map);</script>
-                    </div>
-                    <div class="server1-ms">
-                        <p>Map Size: <script>document.write(map_size);</script></p>
-                    </div>
-                    <div class="server1-wp">
-                        <p>Wipe: Weekly (Sunday's 12AM AEST)</p>
-                    </div>
-                    <div class="server1-rating">
-                        <p>Rating: <script>document.write(rating);</script></p>
-                    </div>
-                    <div class="server1-btn">
-                        <form action="steam://connect/103.193.80.81:28025" target="_blank">
-                            <input type="submit" class= "s1-btn" value="Connect" />
-                        </form>
+        <div id="server-section" class="server-container">
+            <div class="servers-title">
+                <h1>SERVERS</h1>
+            </div>
+            <div class="servers-ls">
+                <p>Live Stats</p>
+            </div>
+            <div class="server-list">
+                <div class="servers">
+                    <div class="server1">
+                        <div class="server1-h1">
+                            <h2>[AU/NZ] Arctic Main</h2>
+                        </div>
+                        <div class="server1-status">
+                            <p id="status"></p>
+                        </div>
+                        <div class="server1-players">
+                            <p><script>document.write(players_cur);</script> / <script>document.write(players_max);</script> Players</p>
+                        </div>
+                        <div class="server1-ip">
+                            <p>Server IP: <script>document.write(server_ip);</script>: <script>document.write(server_port);</script></p>
+                        </div>
+                        <div class="server1-map">
+                            <p>Map: <script>document.write(map);</script>
+                        </div>
+                        <div class="server1-ms">
+                            <p>Map Size: <script>document.write(map_size);</script></p>
+                        </div>
+                        <div class="server1-wp">
+                            <p>Wipe: Weekly (Sunday's 12AM AEST)</p>
+                        </div>
+                        <div class="server1-rating">
+                            <p>Rating: <script>document.write(rating);</script></p>
+                        </div>
+                        <div class="server1-btn">
+                            <form action="steam://connect/103.193.80.81:28025" target="_blank">
+                                <input type="submit" class= "s1-btn" value="Connect" />
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,20 +104,10 @@
                 const data = await response.json();
                 const { status } = data;
                 document.getElementById('status').textContent = status;
+                setTimeout(() => {getS1Status}, 5000);
             }
 
             getS1Status();
-        </script>
-        <script>
-            const api_s1info_url = 'https://api.rust-servers.info/info/6121'
-            async function getS1Wipe () {
-                const response = await fetch (api_s1info_url);
-                const data = await response.json();
-                const { wipe_cycle } = data;
-                document.getElementById('wipe_cycle').textContent = wipe_cycle;
-            }
-
-            getS1Wipe();
         </script>
     </body>
 </html>
