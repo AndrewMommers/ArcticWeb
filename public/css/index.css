@@ -17,7 +17,6 @@ body::-webkit-scrollbar {
 
 .header {
     overflow: hidden;
-    padding: 10px 10px;
 }
 
 .header a {
@@ -36,12 +35,12 @@ body::-webkit-scrollbar {
 }
 
 .header-center {
-    float: none;
+    float: left;
     position: -webkit-sticky;
     position: sticky;
-    position: absolute;
+    position: relative;
     top: 0%;
-    left: 40%;
+    left: 41.2%;
 }
 
 a {
@@ -84,14 +83,14 @@ a:hover::before {
     height: auto;
     width: 300px;
     bottom: 75%;
-    left: 33.5%;
+    left: 34.5%;
 }
 
 .arctic-h1 {
     float: left;
     position: relative;
     color: white;
-    left: 20%;
+    left: 21.5%;
     font-size: 2em;
 }
 
@@ -99,7 +98,7 @@ a:hover::before {
     float: left;
     position: relative;
     color: #74c0ff;
-    left: 20%;
+    left: 21.5%;
     font-size: 2em;
 }
 
@@ -115,7 +114,7 @@ a:hover::before {
     margin-left: -0.5em;
     margin-bottom: -0.5em;
     top: 30%;
-    left: 40%;
+    left: 42%;
 }
 
 .button1 {
@@ -176,7 +175,7 @@ a:hover::before {
     position: relative;
     background: #0b1a23;
     background-position: center;
-    top: 70%;
+    top: 65%;
     height: 60vh;
     width: 100%;
     right: 0;
@@ -317,7 +316,7 @@ a:hover::before {
     display: flex;
     position: relative;
     color: #ddd;
-    top: 65%;
+    top: 60%;
 }
 
 .copyright {
