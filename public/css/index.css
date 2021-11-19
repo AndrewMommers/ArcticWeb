@@ -194,7 +194,7 @@ a:hover::before {
 
 .servers-title {
     position: absolute;
-    left: 42.4%;
+    left: 43.5%;
     top: 0px;
     color:#74c0ff;
     font-size: 1.2em;
@@ -202,7 +202,7 @@ a:hover::before {
 
 .servers-ls {
     position: absolute;
-    left: 44.8%;
+    left: 46%;
     top: 55px;
     color: white;
     font-size: 1.20em;
@@ -215,7 +215,7 @@ a:hover::before {
     border-radius: 25px;
     color: white;
     top: 170px;
-    left: 38.5%;
+    left: 40%;
     height: 300px;
     width: 300px;
     font-size: 1em;
