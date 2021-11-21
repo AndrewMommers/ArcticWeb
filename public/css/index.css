@@ -89,6 +89,7 @@ a:hover::before {
     top: 450px;
     color: white;
     font-size: 2em;
+    text-align: center;
 }
 
 .quicklinks {
