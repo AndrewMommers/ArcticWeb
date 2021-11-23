@@ -72,12 +72,13 @@ a:hover::before {
 
 .main-section {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
+    flex-direction: column;
     position: absolute;
     top: 130px;
     height: auto;
@@ -85,11 +86,24 @@ a:hover::before {
 }
 
 .arcticrust {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: relative;
     top: 450px;
+    width: 100%;
     color: white;
     font-size: 2em;
     text-align: center;
+}
+
+.arctich1 {
+    color: white;
+}
+
+.rusth1 {
+    color: #74c0ff;
 }
 
 .quicklinks {
@@ -98,7 +112,7 @@ a:hover::before {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 280px;
+    top: 400px;
 }
 
 .column1 {
@@ -245,8 +259,8 @@ a:hover::before {
 .policy-btn {
     position: absolute;
     top: 1590px;
+    right: 15px;
     padding-top: 10px;
-    left: 1700px;
     color: #ddd;
 }
 
