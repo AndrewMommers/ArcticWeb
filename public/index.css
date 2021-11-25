@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url('/img/rust-background.png');
+    background-image: url('rust-background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
